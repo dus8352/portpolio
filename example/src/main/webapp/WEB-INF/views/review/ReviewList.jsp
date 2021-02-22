@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="<%=application.getContextPath()%>/">Home</a><br/>
+<a href="<%=application.getContextPath()%>/Common/LoginIndex">Home</a><br/>
 <a href="<%=application.getContextPath()%>/Review/Write">ReviewWrite</a><br/>
 <a href="<%=application.getContextPath()%>/Review/Read">ReviewRead</a><br/>
 </body>

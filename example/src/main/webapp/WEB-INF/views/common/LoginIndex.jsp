@@ -8,7 +8,7 @@
   <!-- Navigation -->	
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="<%=application.getContextPath() %>/">Start Bootstrap</a>
+      <a class="navbar-brand" href="<%=application.getContextPath() %>/Common/LoginIndex">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -16,13 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/Join">회원가입</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/Login">로그인</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/List">관리자</a>
+            <a class="nav-link" href="<%=application.getContextPath()%>/Member/MyPage">마이페이지</a>
           </li>	
         </ul>
       </div>
@@ -44,7 +38,79 @@
     </div>
   </header>
 
- 
+  <!-- Main Content -->
+
+        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Date">
+             경기일정
+			</a>
+        </div>
+        <hr>
+                <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/League">
+            
+             경기리그
+       
+
+			</a>
+        </div>
+        <hr>
+                <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Place">
+
+             경기장소
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Score">
+
+             상대팀과의 전적
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Info">
+
+             그날의 경기 정보
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Player/Squad">
+
+            스쿼드
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Result">
+
+            경기결과
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Soccer/Weather">
+
+            경기장 날씨 
+
+			</a>
+        </div>
+        <hr>
+                        <div class="post-preview">
+          <a href="<%=application.getContextPath()%>/Player/List">
+
+            선수정보
+
+			</a>
+        </div>
+        <hr>
 
   <!-- Footer -->
   <footer>

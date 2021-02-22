@@ -2,13 +2,23 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<head>
 <%@ include file="/WEB-INF/views/common/Head.jsp" %>
-<body>
+<script>
+ $(function(){
+	 $("#info-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Common/LoginIndex"
+	 });
+ });
 
+</script>
+</head>
+<body>
   <!-- Navigation -->	
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="<%=application.getContextPath() %>/">Start Bootstrap</a>
+      <a class="navbar-brand" href="<%=application.getContextPath() %>/Common/LoginIndex">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -16,13 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/Join">회원가입</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/Login">로그인</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%=application.getContextPath()%>/Member/List">관리자</a>
+            <a class="nav-link" href="<%=application.getContextPath()%>/Member/MyPage">마이페이지</a>
           </li>	
         </ul>
       </div>
@@ -36,40 +40,14 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>토트넘 정보</h1>
-
+            <h1>그날의 경기정보</h1>
+            <button id="info-btn">정보보기</button>
+	
           </div>
         </div>
       </div>
     </div>
   </header>
-
-  <!-- Main Content -->
-
-        <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/Date">
-             경기일정
-			</a>
-        </div>
-        <hr>
-                <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/League">
-            
-             경기리그
-       
-
-			</a>
-        </div>
-        <hr>
-                <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/Place">
-
-             경기장소
-
-			</a>
-        </div>
-        <hr>
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -88,9 +66,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="<%=application.getContextPath()%>/resources/js/clean-blog.min.js"></script>
-
-
-
 
 </body>
 </html>

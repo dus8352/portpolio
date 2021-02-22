@@ -2,9 +2,8 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<%@ include file="/WEB-INF/views/common/Head.jsp" %>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<%@ include file="/WEB-INF/views/common/Head.jsp" %>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
