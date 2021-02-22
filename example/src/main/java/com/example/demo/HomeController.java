@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,7 +24,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
@@ -36,20 +37,32 @@ public class HomeController {
 		
 		return "index";
 	}
-	@RequestMapping("/Board/{type}")
+	@GetMapping("/Board/{type}")
 	public String board(@PathVariable String type) {
-		return "/board/Board"+type;
+		return "board/Board"+type;
 	}
-	@RequestMapping("/Item/{type}")
+	@GetMapping("/Item/{type}")
 	public String item(@PathVariable String type) {
-		return "/item/Item"+type;
+		return "item/Item"+type;
 	}
-	@RequestMapping("/Member/{type}")
+	@GetMapping("/Member/{type}")
 	public String member(@PathVariable String type) {
-		return "/member/Member"+type;
+		return "member/Member"+type;
 	}
-	@RequestMapping("/Review/{type}")
+	@GetMapping("/Review/{type}")
 	public String review(@PathVariable String type) {
-		return "/review/Review"+type;
+		return "review/Review"+type;
+	}
+	@GetMapping("/Soccer/{type}")
+	public String soccer(@PathVariable String type) {
+		return "soccer/Soccer"+type;
+	}
+	@GetMapping("/Player/{type}")
+	public String player(@PathVariable String type) {
+		return "player/Player"+type;
+	}
+	@GetMapping("/Common/{type}")
+	public String common(@PathVariable String type) {
+		return "common/"+type;
 	}
 }

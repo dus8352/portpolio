@@ -9,5 +9,10 @@
 <body>
 <h1>경기수정</h1>
 <a href="<%=application.getContextPath()%>/">Home</a><br/>
+<a href="<%=application.getContextPath()%>/Soccer/Date">Date</a><br/>
+<a href="<%=application.getContextPath()%>/Soccer/League">League</a><br/>
+<a href="<%=application.getContextPath()%>/Soccer/Place">Place</a><br/>
+<a href="<%=application.getContextPath()%>/Soccer/Result">Result</a><br/>
+<a href="<%=application.getContextPath()%>/Soccer/Weather">Weather</a><br/>
 </body>
 </html>

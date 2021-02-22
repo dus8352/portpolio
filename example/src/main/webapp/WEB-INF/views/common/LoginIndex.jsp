@@ -36,7 +36,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>토트넘 정보</h1>
+            <h1>회원 토트넘 정보</h1>
 
           </div>
         </div>
@@ -44,37 +44,7 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/Date">
-            <h2 class="post-title">
-             경기일정
-       
-            </h2>
-			</a>
-        </div>
-        <hr>
-                <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/League">
-            <h2 class="post-title">
-             경기리그
-       
-            </h2>
-			</a>
-        </div>
-        <hr>
-                <div class="post-preview">
-          <a href="<%=application.getContextPath()%>/Soccer/Place">
-            <h2 class="post-title">
-             경기장소
-       
-            </h2>
-			</a>
-        </div>
-        <hr>
+ 
 
   <!-- Footer -->
   <footer>

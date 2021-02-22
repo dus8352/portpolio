@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<a href="<%=application.getContextPath()%>/">Home</a><br/>
 </body>
 </html>

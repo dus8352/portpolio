@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>선수 등번호</h1>
+<h1>선수정보</h1>
 <a href="<%=application.getContextPath()%>/">Home</a><br/>
+
 </body>
 </html>

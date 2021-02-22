@@ -52,6 +52,16 @@ hr {
   width: 100%;
   opacity: 0.9;
 }
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
 .registerbtn:hover {
   opacity: 1;
@@ -71,7 +81,7 @@ a {
 </head>
 <body>
 
-<form action="/action_page.php">
+<form action="<%=application.getContextPath()%>/Member/Login">
   <div class="container">
     <h1>회원가입</h1>
     <p>계정을 만들려면 이 양식을 작성하십시오.</p>
@@ -87,7 +97,8 @@ a {
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <p>계정을 생성함으로써 귀하는 동의합니다.<a href="#">동의함</a>.</p>
-
+    
+	<button type="button" class="cancelbtn">취소</button>
     <button type="submit" class="registerbtn">회원가입</button>
   </div>
   
@@ -95,6 +106,7 @@ a {
     <p>계정이 이미 있습니까? <a href="#">로그인</a>.</p> 
     <p>홈으로이동<a href="<%=application.getContextPath() %>/">홈으로</a>.</p> 
   </div>
+  
 </form>
 
 </body>
