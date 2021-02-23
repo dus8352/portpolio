@@ -30,7 +30,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('<%=application.getContextPath() %>/resources/img/home-bg.jpg')">
+  <header class="masthead" style="background-image: url('<%=application.getContextPath() %>/resources/img/tot.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">

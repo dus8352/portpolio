@@ -5,12 +5,6 @@
 <head>
 <%@ include file="/WEB-INF/views/common/Head.jsp" %>
 <script>
- $(function(){
-	 $("#league-btn").click(function(e){
-		 e.preventDefault();
-		 location.href="<%=application.getContextPath()%>/Common/LoginIndex"
-	 });
- });
 
 </script>
 </head>
@@ -34,14 +28,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('<%=application.getContextPath() %>/resources/img/home-bg.jpg')">
+  <header class="masthead" style="background-image: url('<%=application.getContextPath() %>/resources/img/league.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>경기리그</h1>
-            <button id="league-btn">경기리그보기</button>
+          
 	
           </div>
         </div>

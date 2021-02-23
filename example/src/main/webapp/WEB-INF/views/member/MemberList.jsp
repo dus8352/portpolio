@@ -5,13 +5,72 @@
 <head>
 <%@ include file="/WEB-INF/views/common/Head.jsp" %>
 <script>
+$(function(){
+	 $("#date-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Date"
+	 });
+});
  $(function(){
 	 $("#league-btn").click(function(e){
 		 e.preventDefault();
-		 location.href="<%=application.getContextPath()%>/Common/LoginIndex"
+		 location.href="<%=application.getContextPath()%>/Soccer/League"
 	 });
  });
-
+ $(function(){
+	 $("#place-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Place"
+	 });
+ });
+ $(function(){
+	 $("#list-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Player/List"
+	 });
+ });
+ $(function(){
+	 $("#squad-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Player/Squad"
+	 });
+ });
+ $(function(){
+	 $("#weather-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Weather"
+	 });
+ });
+ $(function(){
+	 $("#result-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Result"
+	 });
+ });
+ $(function(){
+	 $("#score-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Score"
+	 });
+ });
+ $(function(){
+	 $("#info-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Info"
+	 });
+ });
+ $(function(){
+	 $("#update-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Soccer/Update"
+	 });
+ });
+ $(function(){
+	 $("#list2-btn").click(function(e){
+		 e.preventDefault();
+		 location.href="<%=application.getContextPath()%>/Review/Page"
+	 });
+ });
 </script>
 </head>
 <body>
@@ -40,18 +99,9 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>경기리그</h1>
-            <button id="update2-btn">경기 리그 수정</button>
-			<button id="-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
-			<button id="league-btn">경기리그보기</button>
+            <h1>관리자</h1>
+           
+			
 			
           </div>
         </div>
@@ -64,6 +114,17 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
+ 			<button id="date-btn">경기일정</button><br/>
+			<button id="league-btn">경기리그</button><br/>
+			<button id="place-btn">경기장소</button><br/>
+			<button id="list-btn">선수정보</button><br/>
+			<button id="squad-btn">스쿼드</button><br/>
+			<button id="weather-btn">경기장날씨</button><br/>
+			<button id="result-btn">경기결과</button><br/>
+			<button id="score-btn">상대팀과의전적</button><br/>
+			<button id="info-btn">그날의경기정보</button><br/>
+			<button id="update-btn">경기수정</button><br/>
+			<button id="list2-btn">리뷰리스트</button><br/>
           <p class="copyright text-muted">양연호</p>
         </div>
       </div>
